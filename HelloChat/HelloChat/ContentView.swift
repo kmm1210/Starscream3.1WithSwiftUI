@@ -29,10 +29,11 @@ struct ContentView: View {
             }
             ScrollViewReader { proxy in
                 List(webSocketManager.messages) { message in
-                    ChatBubble(chatMessage: message)
+                    ChatBubbleView(chatMessage: message)
                         .id(message.id)
                         .listRowSeparator(.hidden)
                 }
+                .listStyle(PlainListStyle())
                 .scrollContentBackground(.hidden)
                 .onChange(of: webSocketManager.messages) {
                     //스크롤 뷰의 마지막 row를 먼저 보여주도록 이동

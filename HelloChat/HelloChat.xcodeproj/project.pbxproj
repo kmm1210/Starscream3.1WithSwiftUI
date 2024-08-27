@@ -8,7 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CD3322C72C780C0500B97A27 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3322C62C780C0500B97A27 /* ChatModel.swift */; };
-		CD59706B2C7706DC008EB209 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59706A2C7706DC008EB209 /* ChatBubble.swift */; };
+		CD59706B2C7706DC008EB209 /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59706A2C7706DC008EB209 /* ChatBubbleView.swift */; };
+		CD65E17E2C7C2409000D3794 /* ReactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65E17D2C7C2409000D3794 /* ReactionsView.swift */; };
+		CD65E1802C7C259C000D3794 /* ChatBubblePopoverDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65E17F2C7C259C000D3794 /* ChatBubblePopoverDemo.swift */; };
+		CD65E1832C7C4E11000D3794 /* OptionsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65E1822C7C4E11000D3794 /* OptionsMenuView.swift */; };
+		CD65E1852C7C6B42000D3794 /* ChatBubblePopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65E1842C7C6B42000D3794 /* ChatBubblePopoverView.swift */; };
+		CD65E1872C7C6F46000D3794 /* ChatBubblePopoverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65E1862C7C6F46000D3794 /* ChatBubblePopoverModifier.swift */; };
 		CDC543532C74BC87009DDB58 /* HelloChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC543522C74BC87009DDB58 /* HelloChatApp.swift */; };
 		CDC543552C74BC87009DDB58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC543542C74BC87009DDB58 /* ContentView.swift */; };
 		CDC543572C74BC89009DDB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC543562C74BC89009DDB58 /* Assets.xcassets */; };
@@ -19,7 +24,12 @@
 
 /* Begin PBXFileReference section */
 		CD3322C62C780C0500B97A27 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
-		CD59706A2C7706DC008EB209 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		CD59706A2C7706DC008EB209 /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
+		CD65E17D2C7C2409000D3794 /* ReactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionsView.swift; sourceTree = "<group>"; };
+		CD65E17F2C7C259C000D3794 /* ChatBubblePopoverDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubblePopoverDemo.swift; sourceTree = "<group>"; };
+		CD65E1822C7C4E11000D3794 /* OptionsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsMenuView.swift; sourceTree = "<group>"; };
+		CD65E1842C7C6B42000D3794 /* ChatBubblePopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubblePopoverView.swift; sourceTree = "<group>"; };
+		CD65E1862C7C6F46000D3794 /* ChatBubblePopoverModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubblePopoverModifier.swift; sourceTree = "<group>"; };
 		CDC5434F2C74BC87009DDB58 /* HelloChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC543522C74BC87009DDB58 /* HelloChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloChatApp.swift; sourceTree = "<group>"; };
 		CDC543542C74BC87009DDB58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD65E1812C7C43F6000D3794 /* ChatBubblePopover */ = {
+			isa = PBXGroup;
+			children = (
+				CD65E17D2C7C2409000D3794 /* ReactionsView.swift */,
+				CD65E1822C7C4E11000D3794 /* OptionsMenuView.swift */,
+				CD65E1842C7C6B42000D3794 /* ChatBubblePopoverView.swift */,
+				CD65E1862C7C6F46000D3794 /* ChatBubblePopoverModifier.swift */,
+				CD65E17F2C7C259C000D3794 /* ChatBubblePopoverDemo.swift */,
+			);
+			path = ChatBubblePopover;
+			sourceTree = "<group>";
+		};
 		CDC543462C74BC87009DDB58 = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +84,10 @@
 			children = (
 				CDC543522C74BC87009DDB58 /* HelloChatApp.swift */,
 				CDC543542C74BC87009DDB58 /* ContentView.swift */,
-				CD59706A2C7706DC008EB209 /* ChatBubble.swift */,
+				CD59706A2C7706DC008EB209 /* ChatBubbleView.swift */,
 				CD3322C62C780C0500B97A27 /* ChatModel.swift */,
 				CDC543642C74BD06009DDB58 /* WebSocketManager.swift */,
+				CD65E1812C7C43F6000D3794 /* ChatBubblePopover */,
 				CDC543562C74BC89009DDB58 /* Assets.xcassets */,
 				CDC543582C74BC89009DDB58 /* HelloChat.entitlements */,
 				CDC543592C74BC89009DDB58 /* Preview Content */,
@@ -157,10 +180,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3322C72C780C0500B97A27 /* ChatModel.swift in Sources */,
+				CD65E1852C7C6B42000D3794 /* ChatBubblePopoverView.swift in Sources */,
+				CD65E17E2C7C2409000D3794 /* ReactionsView.swift in Sources */,
 				CDC543552C74BC87009DDB58 /* ContentView.swift in Sources */,
 				CDC543532C74BC87009DDB58 /* HelloChatApp.swift in Sources */,
+				CD65E1832C7C4E11000D3794 /* OptionsMenuView.swift in Sources */,
+				CD65E1872C7C6F46000D3794 /* ChatBubblePopoverModifier.swift in Sources */,
 				CDC543652C74BD06009DDB58 /* WebSocketManager.swift in Sources */,
-				CD59706B2C7706DC008EB209 /* ChatBubble.swift in Sources */,
+				CD59706B2C7706DC008EB209 /* ChatBubbleView.swift in Sources */,
+				CD65E1802C7C259C000D3794 /* ChatBubblePopoverDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

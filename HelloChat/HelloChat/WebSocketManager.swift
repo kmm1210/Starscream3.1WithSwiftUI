@@ -10,8 +10,8 @@ import Starscream
 
 class WebSocketManager: ObservableObject {
     private var socket: WebSocket!
-//        private let serverUrl = "wss://echo.websocket.org" // 예제용 에코 서버
-    private let serverUrl = "ws://localhost:8080" // 예제용 로컬 서버
+    private let serverUrl = "wss://echo.websocket.org" // 예제용 에코 서버
+//    private let serverUrl = "ws://localhost:8080" // 예제용 로컬 서버
     
     
     @Published var isConnected = false
